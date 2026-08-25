@@ -111,7 +111,7 @@ const faqs = [
     </div>
     <header :class="{ scrolled }">
       <a class="brand" href="#inicio"
-        ><img src="/images/logo-premium.png" alt="Agua Azul Premium"
+        ><img src="/images/agua-azul-premium-logo-transparent.png" alt="Agua Azul Premium"
       /></a>
       <nav :class="{ open: menu }">
         <a href="#experiencia" @click="menu = false">Experiência</a
@@ -362,7 +362,7 @@ const faqs = [
       </section>
     </main>
     <footer>
-      <img src="/images/logo-premium.png" alt="Agua Azul Premium" />
+      <img src="/images/agua-azul-premium-logo-transparent.png" alt="Agua Azul Premium" />
       <div>
         <b>Showroom Cuiabá</b>
         <a
