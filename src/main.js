@@ -6,6 +6,7 @@ import Dashboard from './views/Dashboard.vue'
 import MapDashboard from './views/MapDashboard.vue'
 import ControlDashboard from './views/ControlDashboard.vue'
 import NewCampaign from './views/NewCampaign.vue'
+import { track } from './tracking'
 import './style.css'
 
 const router = createRouter({
@@ -20,7 +21,6 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
-  if (!to.path.startsWith('/painel-azul'))
-    import('./tracking').then(({ track }) => track('page_view'))
+  if (!to.path.startsWith('/painel-azul')) track('page_view')
 })
 createApp(App).use(router).mount('#app')
